@@ -33,7 +33,7 @@
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -46,6 +46,23 @@
   <script defer src="/script.js"></script>
 </head>
 <body>
+  <div id="video-grid"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meeting</title>
+  <link rel="stylesheet" href="/style.css">
+  <script>const ROOM_ID = "<%= roomId %>"</script>
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="/script.js"></script>
+</head>
+<body class="meeting">
   <div id="video-grid"></div>
 </body>
 </html>
